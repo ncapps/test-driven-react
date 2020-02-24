@@ -12,9 +12,10 @@
   - `toBe()` is a *matcher* that performs a strict equality test between the value being tested and the expected value
   - The essence of Test-Drive Development (TDD) is rapid iteration. You will find that you learn more quickly from iterating - writing small, easy-to-understand pieces of code one at a time.
   - Automatically re-run tests when a change to a file is detected: `$ npx jest --watchAll`
-  - To compute code coverage add the `--coverage` flag. Use `--coverageReporters=test` to just get the summary output
+  - To compute code coverage add the `--coverage` flag. Use `--coverageReporters=text` to just get the summary output
   - "Branches" refer to the possible outcomes of `if/else` statements
   - Code coverage is imperfect - high code coverage numbers don't necessarily mean the most *useful* tests are included
+  - *"Red, green, repeat"* - encapsulates TDD in a nutshell.
 
 ## Acknowledgements
 [Test-Driven React by Trevor Burham](https://pragprog.com/book/tbreact/test-driven-react)
