@@ -1,5 +1,16 @@
-const removePunctuation = (str) => str.replace(/[^\w\\s]|_s/g, '');
+const prepareStr = (str) => str.toLowerCase().replace(/[^a-z]/g, '');
 
-module.exports = (str) => {
-  return [removePunctuation(str).toLowerCase()];
+const isPalindrome = (str) => str.split;
+
+const stringStartPalindrome = (str) => {
+  const reverse = str.slice().split().reverse().join('');
+  return reverse === str;
 };
+
+const palindrome = (str) => str;
+
+palindrome.prepareStr = prepareStr;
+palindrome.isPalindrome = isPalindrome;
+palindrome.stringStartPalindrome = stringStartPalindrome;
+
+module.exports = palindrome;
