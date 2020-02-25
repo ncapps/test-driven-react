@@ -11,8 +11,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^5.10.0",
     "eslint-plugin-jest": "^23.8.0",
-    "jest": "^25.1.0"
+    "jest": "^25.1.0",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }
