@@ -17,5 +17,10 @@
   - Code coverage is imperfect - high code coverage numbers don't necessarily mean the most *useful* tests are included
   - *"Red, green, repeat"* - encapsulates TDD in a nutshell.
 
+## Chapter 2. Integrated Tooling with VS Code
+  - Feedback while using TDD should be automated and fast
+  - 
+
+
 ## Acknowledgements
 [Test-Driven React by Trevor Burham](https://pragprog.com/book/tbreact/test-driven-react)
