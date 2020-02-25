@@ -23,7 +23,7 @@
     - Integrated terminal
     - Integrated source control
     - Adjust settings with User Settings and Workspace Settings
-
+  - A linter is a program that uses a set of rules to detect code that, though syntactically valid, is likely to contain mistakes
 
 ## Acknowledgements
 [Test-Driven React by Trevor Burham](https://pragprog.com/book/tbreact/test-driven-react)
