@@ -24,6 +24,8 @@
     - Integrated source control
     - Adjust settings with User Settings and Workspace Settings
   - A linter is a program that uses a set of rules to detect code that, though syntactically valid, is likely to contain mistakes
+  - Every time ESLint runs against a JavaScript file, it looks for the closest configuration. Then it continues looking in all parent directories, merging all of the configurations it finds (with closer given greater priority)
+
 
 ## Acknowledgements
 [Test-Driven React by Trevor Burham](https://pragprog.com/book/tbreact/test-driven-react)
