@@ -1,3 +1,5 @@
+const removePunctuation = (str) => str.replace(/[^\w\\s]|_s/g, '');
+
 module.exports = (str) => {
-  return [str];
+  return [removePunctuation(str).toLowerCase()];
 };
