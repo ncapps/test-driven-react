@@ -19,7 +19,10 @@
 
 ## Chapter 2. Integrated Tooling with VS Code
   - Feedback while using TDD should be automated and fast
-  - 
+  - Key Features include:
+    - Integrated terminal
+    - Integrated source control
+    - Adjust settings with User Settings and Workspace Settings
 
 
 ## Acknowledgements
