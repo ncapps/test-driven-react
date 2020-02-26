@@ -27,6 +27,10 @@
   - Every time ESLint runs against a JavaScript file, it looks for the closest configuration. Then it continues looking in all parent directories, merging all of the configurations it finds (with closer given greater priority)
   - *"Live in the code"* - strive to make running your tests as automatic as breathing
 
+## Chapter 3. Testing React with Enzyme
+  - Web application elements can be isolated as *components* using React. This makes testing much easier
+  - We can make assertions about components using a library called *Enzyme*
+  - Prop types are strictly a development aid, and are ignored by React in production mode
 
 ## Acknowledgements
 [Test-Driven React by Trevor Burham](https://pragprog.com/book/tbreact/test-driven-react)
