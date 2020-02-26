@@ -23,9 +23,27 @@ describe('isPalindrome()', () => {
   });
 });
 
+describe('stringStartPalindrome()', () => {
+  it('should return the longest palindrome at the start of the string', () => {
+    expect(stringStartPalindrome('wow')).toBe('wow');
+    expect(stringStartPalindrome('ahha')).toBe('ahha');
+    expect(stringStartPalindrome('hohoho')).toBe('hohoh');
+  });
+
+  it('should return null if no length 3+ palindrom starts the string', () => {
+    expect(stringStartPalindrome('ww')).toBe(null);
+    expect(stringStartPalindrome('abcda')).toBe(null);
+    expect(stringStartPalindrome('bananarama')).toBe(null);
+  });
+});
+
 describe('palindrome()', () => {
 it('should correctly identify one-word palindromes', () => {
     expect(palindrome('madam')).toEqual(['madam']);
+  });
+
+  it('should return empty array when given no palindrome', () => {
+    expect(palindrome('tic tac toe')).toEqual([]);
   });
 
 it('should ignore casing', () => {
