@@ -31,6 +31,15 @@
   - Web application elements can be isolated as *components* using React. This makes testing much easier
   - We can make assertions about components using a library called *Enzyme*
   - Prop types are strictly a development aid, and are ignored by React in production mode
+  - Tests should describe the behavior of their target in isolation, not the behavior within a complete system. To test the complete system, you must test each part on its own. The reward is that changes to a single component can only fail that component's tests, rather than a cascade of failures.
+  - *"Test one piece at a time"*
+  - Testing in isolation can be achieved in React using Enzyme's `shallow()` method
+
+## Chapter 4. Styling in JavaScript with Styled-Components
+  - *React* has transformed web development by allowing developers to express the page's markup as a function of application state.
+  - *CSS-in-JS*, a paradigm exemplified by the **Styled-Components** library
+  - With CSS-in-JS, you write styles using the familiar CSS syntac, but the actualy style rules are generated at runtime as needed. This benefits from this paradigm include: improved code organization and maintainability, and allows style rules to be subjected to unit tests
+  - *Webpack* is a configurable tool for building JavaScript bundles
 
 ## Acknowledgements
 [Test-Driven React by Trevor Burham](https://pragprog.com/book/tbreact/test-driven-react)

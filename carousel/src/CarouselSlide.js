@@ -8,6 +8,7 @@ const CarouselSlide = ({
     <img src={imgUrl} />
     <figcaption>
       <strong>{description}</strong>
+      {' '}
       {attribution}
     </figcaption>
   </figure>
