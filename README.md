@@ -40,6 +40,17 @@
   - *CSS-in-JS*, a paradigm exemplified by the **Styled-Components** library
   - With CSS-in-JS, you write styles using the familiar CSS syntac, but the actualy style rules are generated at runtime as needed. This benefits from this paradigm include: improved code organization and maintainability, and allows style rules to be subjected to unit tests
   - *Webpack* is a configurable tool for building JavaScript bundles
+  - **Styled-Components** offers a number of advantages
+    - Styles are either in the same module or imported like any other dependency
+    - Styles are generated as a function of their component's props and state, just like markup
+    - Styles can be subjected to unit tests
+    - Style rules have the full range of functionality of ordinary CSS
+  - `styled.img` is a function that generates a component that renders an `<img>` tag with the given styles
+  - ES6 feature *tagged templates*: If you place a function directly in front of a template string, the function is called with the template string as an argument
+  - A React component's `defaultProps` are used as fallbacks when the prop's given value is `undefined`
+  - Like `shallow()`, `mount()` takes a React tree, renders it, and returns a wrapper that lets you make queries about that tree. Unlike `shallow()`, `mount()` fully renders the tree to the DOM
+  - Used sparingly, `mount()` tests are helpful when testing React components from another project
+  
 
 ## Acknowledgements
 [Test-Driven React by Trevor Burham](https://pragprog.com/book/tbreact/test-driven-react)
