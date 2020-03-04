@@ -17,30 +17,12 @@ describe('CarouselSlide', () => {
     );
   });
 
-  it('should render a <figure>', () => {
-    expect(wrapper.type()).toBe('figure');
-  });
-
-  it('should render an <img> and a <figcaption> as children', () => {
-    expect(wrapper.childAt(0).type()).toBe(CarouselSlide.defaultProps.Img);
-    expect(wrapper.childAt(1).type()).toBe('figcaption');
-  });
-
-  it('should pass `imgUrl` through to the <img>', () => {
-    const imgUrl = 'https://example.com/image.png';
-    wrapper.setProps({ imgUrl });
-    const img = wrapper.find(CarouselSlide.defaultProps.Img);
-    expect(img.prop('src')).toBe(imgUrl);
-  });
-
-  it('should use `description` and `attribution` as the <figcaption>', () => {
-    const description = 'A jaw-droppingly spectacular image';
-    const attribution = 'Trevor Burnham';
-    wrapper.setProps({ description, attribution });
-    expect(wrapper.find('figcaption').text()).toBe(
-      `${description} ${attribution}`,
-    );
-    expect(wrapper.find('figcaption strong').text()).toBe(description);
+  it('should render correctly', () => {
+    wrapper.setProps({
+      description: 'Description',
+      attribution: 'Attribution',
+    });
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('should pass other props through to the <figure>', () => {
@@ -63,38 +45,13 @@ describe('Img', () => {
     mounted = mount(<Img src={imgUrl} imgHeight={500} />);
   });
 
-  it('should render an <img> with the given src', () => {
-    expect(mounted.containsMatchingElement(<img src={imgUrl} />)).toBe(true);
-  });
-
-  it('should have the expected static styles', () => {
-    expect(mounted).toHaveStyleRule('width', '100%');
-    expect(mounted).toHaveStyleRule('object-fit', 'cover');
+  it('should render correctly', () => {
+    expect(mounted.find('img')).toMatchSnapshot();
   });
 
   it('should use imgHeight as the height style property', () => {
     expect(mounted).toHaveStyleRule('height', '500px');
     mounted.setProps({ imgHeight: 'calc(100vh - 100px)' });
     expect(mounted).toHaveStyleRule('height', 'calc(100vh - 100px)');
-  });
-
-  it('should allow styles to be overridden', () => {
-    const TestImg = styled(CarouselSlide.defaultProps.Img)`
-      width: auto;
-      height: auto;
-      object-fit: fill;
-    `;
-
-    mounted = mount(
-      <CarouselSlide
-        Img={TestImg}
-        imgUrl={imgUrl}
-        description="This prop is required"
-      />,
-    );
-
-    expect(mounted.find(TestImg)).toHaveStyleRule('width', 'auto');
-    expect(mounted.find(TestImg)).toHaveStyleRule('height', 'auto');
-    expect(mounted.find(TestImg)).toHaveStyleRule('object-fit', 'fill');
   });
 });
