@@ -50,7 +50,23 @@
   - A React component's `defaultProps` are used as fallbacks when the prop's given value is `undefined`
   - Like `shallow()`, `mount()` takes a React tree, renders it, and returns a wrapper that lets you make queries about that tree. Unlike `shallow()`, `mount()` fully renders the tree to the DOM
   - Used sparingly, `mount()` tests are helpful when testing React components from another project
-  
+  - *"Actively seek feedback"*
+  - It is important to always think ahead: before you write a piece of code, ask yourself what the most valuable feedback you could receive for that code would be.
+
+  ## Chapter 5. Refactoring with Higher-Order Components
+   - A good rule of thumb is that components should be build in such a way that each component has only one job. This distinction is intuitive, not technical.
+   - *Higher-Order Components* (HOCs) is a pattern for splitting up complex components into simpler pieces
+   - A higher-order component is defined as any function that takes a component and returns another component. Well-implemented HOCs tend to be highly reusable
+   - Components in React are described as *controlled* or *uncontrolled* with respect to some variable.
+    - Controlled: Variable is passed down through `props`
+    - Uncontrolled: Variable is managed as `state`
+  - A fundamental rule of React is that components have no power to change their own props
+  - Extracting small pieces of functionality into HOCs, instead of allowing components to grow in complexity, is an important skill for keeping a React codebase manageable
+  - *"Keep the unit small"*
+
+  ## Chapter 6. Continuous Integration and Collaboration
+  - 
+
 
 ## Acknowledgements
 [Test-Driven React by Trevor Burham](https://pragprog.com/book/tbreact/test-driven-react)
