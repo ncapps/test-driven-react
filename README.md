@@ -1,5 +1,7 @@
 # Notes and Working Examples from Test-Driven React
 
+[![Build Status](​https://travis-ci.org/ncapps/test-driven-react.svg?branch=master)](https://travis-ci.org/ncapps/test-driven-react)
+
 ## Chapter 1. Test-Driven Development with Jest
   - *Jest* is a test framework developed by Facebook. Jest runs in a Node.js process.
   - There are several advantages to running tests in a simulated browser environment: *jsdom*
