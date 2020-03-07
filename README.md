@@ -67,7 +67,10 @@
   - *"Keep the unit small"*
 
   ## Chapter 6. Continuous Integration and Collaboration
-  - 
+  - Travis CI is a Continuous Integration (CI) service that integrates with GitHub
+  - Husky is a tool for managing Git hooks in JavaScript projects
+  - Git hooks are scripts that Git runs before or after certai commands, such as `commit` or `push`
+  - Run the Git command with the `--no-verify` flag if you need to skip a Git hook
 
 
 ## Acknowledgements
