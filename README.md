@@ -71,6 +71,12 @@
   - Husky is a tool for managing Git hooks in JavaScript projects
   - Git hooks are scripts that Git runs before or after certai commands, such as `commit` or `push`
   - Run the Git command with the `--no-verify` flag if you need to skip a Git hook
+  - The npm package *lint-staged* allows you to run linters against only the files that are part of the pending commit
+  - *Storybook* has become a popular library for generating documentation pages for React components
+  - The task of bulding a bug-free webiste is about minimizing human error
+  - *"Actively Automate"*
+  - When writing software, the path to becoming a better programmer is constant feedback. Treat every problem you run into as an opportunity to learn.
+  - Every expert started as a persisten novice.
 
 
 ## Acknowledgements
